@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="66.08" tests="3" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="A:\JAVA\org.shaaditest.maven\target\test-classes;A:\JAVA\org.shaaditest.maven\target\classes;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-7\selenium-java-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-alpha-7\selenium-api-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-7\selenium-chrome-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\com\google\auto\service\auto-service-annotations\1.0-rc7\auto-service-annotations-1.0-rc7.jar;C:\Users\Akshay\.m2\repository\com\google\auto\service\auto-service\1.0-rc7\auto-service-1.0-rc7.jar;C:\Users\Akshay\.m2\repository\com\google\auto\auto-common\0.10\auto-common-0.10.jar;C:\Users\Akshay\.m2\repository\com\google\guava\guava\30.0-jre\guava-30.0-jre.jar;C:\Users\Akshay\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Akshay\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Akshay\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Akshay\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Akshay\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Akshay\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-alpha-7\selenium-chromium-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools\4.0.0-alpha-7\selenium-devtools-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-alpha-7\selenium-http-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-alpha-7\selenium-json-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v84\4.0.0-alpha-7\selenium-devtools-v84-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0-alpha-7\selenium-devtools-v85-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v86\4.0.0-alpha-7\selenium-devtools-v86-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v87\4.0.0-alpha-7\selenium-devtools-v87-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-7\selenium-edge-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-7\selenium-edgehtml-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-7\selenium-firefox-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-alpha-7\selenium-firefox-xpi-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-7\selenium-ie-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-alpha-7\selenium-opera-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-alpha-7\selenium-remote-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-handler\4.1.43.Final\netty-handler-4.1.43.Final.jar;C:\Users\Akshay\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Akshay\.m2\repository\io\grpc\grpc-context\1.32.1\grpc-context-1.32.1.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-buffer\4.1.53.Final\netty-buffer-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec-http\4.1.53.Final\netty-codec-http-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec\4.1.53.Final\netty-codec-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-common\4.1.53.Final\netty-common-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-epoll\4.1.53.Final\netty-transport-native-epoll-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-epoll\4.1.53.Final\netty-transport-native-epoll-4.1.53.Final-linux-x86_64.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.53.Final\netty-transport-native-kqueue-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.53.Final\netty-transport-native-kqueue-4.1.53.Final-osx-x86_64.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.53.Final\netty-transport-native-unix-common-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport\4.1.53.Final\netty-transport-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-resolver\4.1.53.Final\netty-resolver-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-api\0.9.1\opentelemetry-api-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-context-prop\0.9.1\opentelemetry-context-prop-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk\0.9.1\opentelemetry-sdk-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\0.9.1\opentelemetry-sdk-common-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk-baggage\0.9.1\opentelemetry-sdk-baggage-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\0.9.1\opentelemetry-sdk-metrics-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk-tracing\0.9.1\opentelemetry-sdk-tracing-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.0.0\reactor-netty-http-1.0.0.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec-http2\4.1.53.Final\netty-codec-http2-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-resolver-dns\4.1.53.Final\netty-resolver-dns-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec-dns\4.1.53.Final\netty-codec-dns-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.0.0\reactor-netty-core-1.0.0.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\netty\reactor-netty\1.0.0\reactor-netty-1.0.0.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\netty\reactor-netty-http-brave\1.0.0\reactor-netty-http-brave-1.0.0.jar;C:\Users\Akshay\.m2\repository\io\zipkin\brave\brave-instrumentation-http\5.12.7\brave-instrumentation-http-5.12.7.jar;C:\Users\Akshay\.m2\repository\io\zipkin\brave\brave\5.12.7\brave-5.12.7.jar;C:\Users\Akshay\.m2\repository\io\zipkin\reporter2\zipkin-reporter-brave\2.15.2\zipkin-reporter-brave-2.15.2.jar;C:\Users\Akshay\.m2\repository\io\zipkin\reporter2\zipkin-reporter\2.15.2\zipkin-reporter-2.15.2.jar;C:\Users\Akshay\.m2\repository\io\zipkin\zipkin2\zipkin\2.21.7\zipkin-2.21.7.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\reactor-core\3.4.0\reactor-core-3.4.0.jar;C:\Users\Akshay\.m2\repository\net\bytebuddy\byte-buddy\1.10.18\byte-buddy-1.10.18.jar;C:\Users\Akshay\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Akshay\.m2\repository\org\asynchttpclient\async-http-client\2.12.1\async-http-client-2.12.1.jar;C:\Users\Akshay\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.1\async-http-client-netty-utils-2.12.1.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec-socks\4.1.48.Final\netty-codec-socks-4.1.48.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-handler-proxy\4.1.48.Final\netty-handler-proxy-4.1.48.Final.jar;C:\Users\Akshay\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Akshay\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-7\selenium-safari-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-7\selenium-support-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Akshay\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Akshay\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Akshay\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Akshay\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Akshay\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Akshay\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Akshay\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Akshay\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Akshay\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Akshay\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\Akshay\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Akshay\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Akshay\.m2\repository\com\opencsv\opencsv\5.4\opencsv-5.4.jar;C:\Users\Akshay\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Akshay\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Akshay\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\Akshay\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Akshay\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Akshay\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Akshay\.m2\repository\com\aventstack\extentreports\4.1.4\extentreports-4.1.4.jar;C:\Users\Akshay\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\Akshay\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Akshay\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Akshay\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Akshay\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Akshay\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Akshay\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\Akshay\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\Akshay\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Akshay\AppData\Local\Temp\surefire10654104038595005590\surefirebooter2815308964605512370.jar C:\Users\Akshay\AppData\Local\Temp\surefire10654104038595005590 2021-05-15T12-50-41_469-jvmRun1 surefire11521155301507217022tmp surefire_08723737477725529049tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="A:\JAVA\org.shaaditest.maven\target\test-classes;A:\JAVA\org.shaaditest.maven\target\classes;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-7\selenium-java-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-alpha-7\selenium-api-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-7\selenium-chrome-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\com\google\auto\service\auto-service-annotations\1.0-rc7\auto-service-annotations-1.0-rc7.jar;C:\Users\Akshay\.m2\repository\com\google\auto\service\auto-service\1.0-rc7\auto-service-1.0-rc7.jar;C:\Users\Akshay\.m2\repository\com\google\auto\auto-common\0.10\auto-common-0.10.jar;C:\Users\Akshay\.m2\repository\com\google\guava\guava\30.0-jre\guava-30.0-jre.jar;C:\Users\Akshay\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Akshay\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Akshay\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Akshay\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Akshay\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Akshay\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-alpha-7\selenium-chromium-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools\4.0.0-alpha-7\selenium-devtools-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-alpha-7\selenium-http-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-alpha-7\selenium-json-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v84\4.0.0-alpha-7\selenium-devtools-v84-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0-alpha-7\selenium-devtools-v85-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v86\4.0.0-alpha-7\selenium-devtools-v86-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v87\4.0.0-alpha-7\selenium-devtools-v87-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-7\selenium-edge-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-7\selenium-edgehtml-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-7\selenium-firefox-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-alpha-7\selenium-firefox-xpi-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-7\selenium-ie-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-alpha-7\selenium-opera-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-alpha-7\selenium-remote-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-handler\4.1.43.Final\netty-handler-4.1.43.Final.jar;C:\Users\Akshay\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Akshay\.m2\repository\io\grpc\grpc-context\1.32.1\grpc-context-1.32.1.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-buffer\4.1.53.Final\netty-buffer-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec-http\4.1.53.Final\netty-codec-http-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec\4.1.53.Final\netty-codec-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-common\4.1.53.Final\netty-common-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-epoll\4.1.53.Final\netty-transport-native-epoll-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-epoll\4.1.53.Final\netty-transport-native-epoll-4.1.53.Final-linux-x86_64.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.53.Final\netty-transport-native-kqueue-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.53.Final\netty-transport-native-kqueue-4.1.53.Final-osx-x86_64.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.53.Final\netty-transport-native-unix-common-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-transport\4.1.53.Final\netty-transport-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-resolver\4.1.53.Final\netty-resolver-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-api\0.9.1\opentelemetry-api-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-context-prop\0.9.1\opentelemetry-context-prop-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk\0.9.1\opentelemetry-sdk-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\0.9.1\opentelemetry-sdk-common-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk-baggage\0.9.1\opentelemetry-sdk-baggage-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\0.9.1\opentelemetry-sdk-metrics-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\opentelemetry\opentelemetry-sdk-tracing\0.9.1\opentelemetry-sdk-tracing-0.9.1.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.0.0\reactor-netty-http-1.0.0.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec-http2\4.1.53.Final\netty-codec-http2-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-resolver-dns\4.1.53.Final\netty-resolver-dns-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec-dns\4.1.53.Final\netty-codec-dns-4.1.53.Final.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.0.0\reactor-netty-core-1.0.0.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\netty\reactor-netty\1.0.0\reactor-netty-1.0.0.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\netty\reactor-netty-http-brave\1.0.0\reactor-netty-http-brave-1.0.0.jar;C:\Users\Akshay\.m2\repository\io\zipkin\brave\brave-instrumentation-http\5.12.7\brave-instrumentation-http-5.12.7.jar;C:\Users\Akshay\.m2\repository\io\zipkin\brave\brave\5.12.7\brave-5.12.7.jar;C:\Users\Akshay\.m2\repository\io\zipkin\reporter2\zipkin-reporter-brave\2.15.2\zipkin-reporter-brave-2.15.2.jar;C:\Users\Akshay\.m2\repository\io\zipkin\reporter2\zipkin-reporter\2.15.2\zipkin-reporter-2.15.2.jar;C:\Users\Akshay\.m2\repository\io\zipkin\zipkin2\zipkin\2.21.7\zipkin-2.21.7.jar;C:\Users\Akshay\.m2\repository\io\projectreactor\reactor-core\3.4.0\reactor-core-3.4.0.jar;C:\Users\Akshay\.m2\repository\net\bytebuddy\byte-buddy\1.10.18\byte-buddy-1.10.18.jar;C:\Users\Akshay\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Akshay\.m2\repository\org\asynchttpclient\async-http-client\2.12.1\async-http-client-2.12.1.jar;C:\Users\Akshay\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.1\async-http-client-netty-utils-2.12.1.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-codec-socks\4.1.48.Final\netty-codec-socks-4.1.48.Final.jar;C:\Users\Akshay\.m2\repository\io\netty\netty-handler-proxy\4.1.48.Final\netty-handler-proxy-4.1.48.Final.jar;C:\Users\Akshay\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Akshay\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-7\selenium-safari-driver-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-7\selenium-support-4.0.0-alpha-7.jar;C:\Users\Akshay\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Akshay\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Akshay\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Akshay\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Akshay\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Akshay\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Akshay\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Akshay\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Akshay\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Akshay\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Akshay\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\Akshay\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Akshay\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Akshay\.m2\repository\com\opencsv\opencsv\5.4\opencsv-5.4.jar;C:\Users\Akshay\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Akshay\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\Akshay\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\Akshay\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Akshay\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Akshay\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Akshay\.m2\repository\com\aventstack\extentreports\4.1.4\extentreports-4.1.4.jar;C:\Users\Akshay\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\Akshay\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Akshay\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Akshay\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Akshay\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Akshay\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Akshay\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\Akshay\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\Akshay\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Akshay"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-14.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="A:\JAVA\org.shaaditest.maven"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Akshay\AppData\Local\Temp\surefire10654104038595005590\surefirebooter2815308964605512370.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="user.name" value="Akshay"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Akshay\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Akshay\AppData\Local\Temp\"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="user.dir" value="A:\JAVA\org.shaaditest.maven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk-14.0.1\bin;C:\Users\Akshay\AppData\Local\Programs\Python\Python37;C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.2\bin;;C:\Users\Akshay\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="gujaratiRegistration" classname="org.shaaditest.maven.GujaratishaadiRegistrationTest" time="23.923">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //h2[text()=&apos;Great! Now some basic details&apos;] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;&#10;System info: host: &apos;LAPTOP-UG5S8S2B&apos;, ip: &apos;192.168.225.214&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Akshay\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50083}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8225d60515e3bd6fd6165c0aa21b56e9" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //h2[text()='Great! Now some basic details'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'LAPTOP-UG5S8S2B', ip: '192.168.225.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Akshay\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50083}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8225d60515e3bd6fd6165c0aa21b56e9
+	at org.shaaditest.maven.GujaratishaadiRegistrationTest.gujaratiRegistration(GujaratishaadiRegistrationTest.java:74)
+</failure>
+    <system-out><![CDATA[chrome
+DEBUG [main] (InternalLoggerFactory.java:53)- Using Log4J as the default logging framework
+DEBUG [main] (ResourceLeakDetector.java:130)- -Dio.netty.leakDetection.level: simple
+DEBUG [main] (ResourceLeakDetector.java:131)- -Dio.netty.leakDetection.targetRecords: 4
+DEBUG [main] (ResourceLeakDetectorFactory.java:196)- Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6b8ca3c8
+DEBUG [main] (PlatformDependent.java:1028)- Platform: Windows
+DEBUG [main] (PlatformDependent0.java:417)- -Dio.netty.noUnsafe: false
+DEBUG [main] (PlatformDependent0.java:889)- Java version: 14
+DEBUG [main] (PlatformDependent0.java:130)- sun.misc.Unsafe.theUnsafe: available
+DEBUG [main] (PlatformDependent0.java:154)- sun.misc.Unsafe.copyMemory: available
+DEBUG [main] (PlatformDependent0.java:192)- java.nio.Buffer.address: available
+DEBUG [main] (PlatformDependent0.java:266)- direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:232)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at org.shaaditest.resources.Base.initDriver(Base.java:43)
+	at org.shaaditest.maven.GujaratishaadiRegistrationTest.initBrowser(GujaratishaadiRegistrationTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+DEBUG [main] (PlatformDependent0.java:331)- java.nio.Bits.unaligned: available, true
+DEBUG [main] (PlatformDependent0.java:390)- jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @505fc5a4
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:343)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:109)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:218)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:197)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:42)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:67)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:78)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at org.shaaditest.resources.Base.initDriver(Base.java:43)
+	at org.shaaditest.maven.GujaratishaadiRegistrationTest.initBrowser(GujaratishaadiRegistrationTest.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+DEBUG [main] (PlatformDependent0.java:403)- java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG [main] (PlatformDependent.java:1071)- sun.misc.Unsafe: available
+DEBUG [main] (PlatformDependent.java:1173)- maxDirectMemory: 2097152000 bytes (maybe)
+DEBUG [main] (PlatformDependent.java:1192)- -Dio.netty.tmpdir: C:\Users\Akshay\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [main] (PlatformDependent.java:1271)- -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG [main] (PlatformDependent.java:177)- -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG [main] (PlatformDependent.java:184)- -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG [main] (CleanerJava9.java:71)- java.nio.ByteBuffer.cleaner(): available
+DEBUG [main] (PlatformDependent.java:204)- -Dio.netty.noPreferDirect: false
+DEBUG [main] (PlatformDependent.java:932)- org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG [main] (InternalThreadLocalMap.java:56)- -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG [main] (InternalThreadLocalMap.java:59)- -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG [main] (JdkSslContext.java:96)- Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+DEBUG [main] (JdkSslContext.java:97)- Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+DEBUG [main] (MultithreadEventLoopGroup.java:44)- -Dio.netty.eventLoopThreads: 16
+DEBUG [main] (NioEventLoop.java:106)- -Dio.netty.noKeySetOptimization: false
+DEBUG [main] (NioEventLoop.java:107)- -Dio.netty.selectorAutoRebuildThreshold: 512
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@341814d3
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@119cbf96
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@71329995
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@768fc0f2
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5454d35e
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@20c0a64d
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@455b6df1
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ddbbdf8
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3f67593e
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1ab06251
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@41ab013
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@14bee915
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1115ec15
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@82ea68c
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@59e505b2
+TRACE [main] (NioEventLoop.java:260)- instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3af0a9da
+DEBUG [main] (PooledByteBufAllocator.java:154)- -Dio.netty.allocator.numHeapArenas: 16
+DEBUG [main] (PooledByteBufAllocator.java:155)- -Dio.netty.allocator.numDirectArenas: 16
+DEBUG [main] (PooledByteBufAllocator.java:157)- -Dio.netty.allocator.pageSize: 8192
+DEBUG [main] (PooledByteBufAllocator.java:162)- -Dio.netty.allocator.maxOrder: 11
+DEBUG [main] (PooledByteBufAllocator.java:166)- -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [main] (PooledByteBufAllocator.java:167)- -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [main] (PooledByteBufAllocator.java:168)- -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [main] (PooledByteBufAllocator.java:169)- -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [main] (PooledByteBufAllocator.java:170)- -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [main] (PooledByteBufAllocator.java:171)- -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+DEBUG [main] (PooledByteBufAllocator.java:172)- -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG [main] (PooledByteBufAllocator.java:173)- -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+DEBUG [main] (ByteBufUtil.java:87)- -Dio.netty.allocator.type: pooled
+DEBUG [main] (ByteBufUtil.java:96)- -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG [main] (ByteBufUtil.java:99)- -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [Forwarding newSession on session null to remote] (DefaultChannelId.java:79)- -Dio.netty.processId: 12872 (auto-detected)
+DEBUG [Forwarding newSession on session null to remote] (NetUtil.java:139)- -Djava.net.preferIPv4Stack: false
+DEBUG [Forwarding newSession on session null to remote] (NetUtil.java:140)- -Djava.net.preferIPv6Addresses: false
+DEBUG [Forwarding newSession on session null to remote] (NetUtil.java:224)- Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [Forwarding newSession on session null to remote] (NetUtil.java:289)- Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG [Forwarding newSession on session null to remote] (DefaultChannelId.java:101)- -Dio.netty.machineId: 70:66:55:ff:fe:0e:77:25 (auto-detected)
+DEBUG [AsyncHttpClient-1-2] (AbstractByteBuf.java:63)- -Dio.netty.buffer.checkAccessible: true
+DEBUG [AsyncHttpClient-1-2] (AbstractByteBuf.java:64)- -Dio.netty.buffer.checkBounds: true
+DEBUG [AsyncHttpClient-1-2] (ResourceLeakDetectorFactory.java:196)- Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2230e410
+DEBUG [AsyncHttpClient-1-2] (Recycler.java:100)- -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG [AsyncHttpClient-1-2] (Recycler.java:101)- -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG [AsyncHttpClient-1-2] (Recycler.java:102)- -Dio.netty.recycler.linkCapacity: 16
+DEBUG [AsyncHttpClient-1-2] (Recycler.java:103)- -Dio.netty.recycler.ratio: 8
+DEBUG [AsyncHttpClient-1-2] (Recycler.java:104)- -Dio.netty.recycler.delayedQueue.ratio: 8
+DEBUG [main] (ThreadLocalRandom.java:212)- -Dio.netty.initialSeedUniquifier: 0x253d6c3f4153540c
+ INFO [main] (GujaratishaadiRegistrationTest.java:31)- Driver Initialized:chrome
+ INFO [main] (GujaratishaadiRegistrationTest.java:36)- Reading Base URL from Cell Value:https://www.gujaratishaadi.com
+chrome
+ INFO [main] (MarathishaddiRegistrationTest.java:34)- Driver Initialized:chrome
+ INFO [main] (MarathishaddiRegistrationTest.java:39)- Reading Base URL from Cell Value:https://www.marathishaadi.com
+ INFO [main] (GujaratishaadiRegistrationTest.java:44)- URL Opened by driver:https://www.gujaratishaadi.com/
+ INFO [main] (GujaratishaadiRegistrationTest.java:46)- Test Class Object instantiated.
+ INFO [main] (GujaratishaadiRegistrationTest.java:48)- Clicked on Let's Begin Button.
+ INFO [main] (GujaratishaadiRegistrationTest.java:52)- Enetered Email ID
+ INFO [main] (GujaratishaadiRegistrationTest.java:54)- Enetered Password
+ INFO [main] (GujaratishaadiRegistrationTest.java:56)- Clicked on Profile Type Drop Down
+ INFO [main] (GujaratishaadiRegistrationTest.java:65)- Profiletype Selected
+ INFO [main] (GujaratishaadiRegistrationTest.java:68)- Selected Gender: Male
+ INFO [main] (GujaratishaadiRegistrationTest.java:70)- Clicked on Next Button
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 39296
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 15, 2021 12:50:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 15, 2021 12:50:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 90, so returning the closest version found: 86
+May 15, 2021 12:50:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 90 of 86
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 19896
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 15, 2021 12:50:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 15, 2021 12:50:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 90, so returning the closest version found: 86
+May 15, 2021 12:50:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 90 of 86
+]]></system-err>
+  </testcase>
+  <testcase name="marathiRegistration" classname="org.shaaditest.maven.MarathishaddiRegistrationTest" time="20.215">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //h2[text()=&apos;Great! Now some basic details&apos;] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;&#10;System info: host: &apos;LAPTOP-UG5S8S2B&apos;, ip: &apos;192.168.225.214&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Akshay\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6b29eda8ecc29750c576e4e2635467c3" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //h2[text()='Great! Now some basic details'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'LAPTOP-UG5S8S2B', ip: '192.168.225.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Akshay\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b29eda8ecc29750c576e4e2635467c3
+	at org.shaaditest.maven.MarathishaddiRegistrationTest.marathiRegistration(MarathishaddiRegistrationTest.java:77)
+</failure>
+    <system-out><![CDATA[ INFO [main] (MarathishaddiRegistrationTest.java:47)- URL Opened by driver:https://www.marathishaadi.com/
+ INFO [main] (MarathishaddiRegistrationTest.java:49)- Test Class Object instantiated.
+ INFO [main] (MarathishaddiRegistrationTest.java:51)- Clicked on Let's Begin Button.
+ INFO [main] (MarathishaddiRegistrationTest.java:55)- Enetered Email ID
+ INFO [main] (MarathishaddiRegistrationTest.java:57)- Enetered Password
+ INFO [main] (MarathishaddiRegistrationTest.java:59)- Clicked on Profile Type Drop Down
+ INFO [main] (MarathishaddiRegistrationTest.java:68)- Profiletype Selected
+ INFO [main] (MarathishaddiRegistrationTest.java:71)- Selected Gender: Male
+ INFO [main] (MarathishaddiRegistrationTest.java:73)- Clicked on Next Button
+]]></system-out>
+  </testcase>
+  <testcase name="shouldAnswerWithTrue on shouldAnswerWithTrue(org.shaaditest.maven.AppTest)" classname="org.shaaditest.maven.AppTest" time="0.012"/>
+</testsuite>

@@ -1,0 +1,5 @@
+org\shaaditest\maven\App.class
+org\shaaditest\resources\ExtentReportsNG.class
+org\shaaditest\resources\Base.class
+org\shaaditest\pageobject\GujaratishaddiRegistration.class
+org\shaaditest\pageobject\MarathishaadiRegistration.class

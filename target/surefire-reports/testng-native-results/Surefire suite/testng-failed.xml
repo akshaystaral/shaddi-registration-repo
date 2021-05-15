@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.shaaditest.maven.MarathishaddiRegistrationTest">
+        <methods>
+          <include name="initBrowser"/>
+          <include name="teardown"/>
+          <include name="marathiRegistration"/>
+        </methods>
+      </class> <!-- org.shaaditest.maven.MarathishaddiRegistrationTest -->
+      <class name="org.shaaditest.maven.GujaratishaadiRegistrationTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="gujaratiRegistration"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- org.shaaditest.maven.GujaratishaadiRegistrationTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

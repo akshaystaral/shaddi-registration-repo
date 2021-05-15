@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 66.08 s <<< FAILURE! - in TestSuite
+gujaratiRegistration(org.shaaditest.maven.GujaratishaadiRegistrationTest)  Time elapsed: 23.923 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //h2[text()='Great! Now some basic details'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'LAPTOP-UG5S8S2B', ip: '192.168.225.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Akshay\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50083}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8225d60515e3bd6fd6165c0aa21b56e9
+	at org.shaaditest.maven.GujaratishaadiRegistrationTest.gujaratiRegistration(GujaratishaadiRegistrationTest.java:74)
+
+marathiRegistration(org.shaaditest.maven.MarathishaddiRegistrationTest)  Time elapsed: 20.215 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //h2[text()='Great! Now some basic details'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'LAPTOP-UG5S8S2B', ip: '192.168.225.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Akshay\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50097}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b29eda8ecc29750c576e4e2635467c3
+	at org.shaaditest.maven.MarathishaddiRegistrationTest.marathiRegistration(MarathishaddiRegistrationTest.java:77)
+

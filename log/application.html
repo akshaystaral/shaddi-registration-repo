@@ -1,0 +1,2961 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri May 14 20:49:59 IST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.logging.InternalLoggerFactory category">io.netty.util.internal.logging.InternalLoggerFactory</td>
+<td>InternalLoggerFactory.java:53</td>
+<td title="Message">Using Log4J as the default logging framework</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetector category">io.netty.util.ResourceLeakDetector</td>
+<td>ResourceLeakDetector.java:130</td>
+<td title="Message">-Dio.netty.leakDetection.level: simple</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetector category">io.netty.util.ResourceLeakDetector</td>
+<td>ResourceLeakDetector.java:131</td>
+<td title="Message">-Dio.netty.leakDetection.targetRecords: 4</td>
+</tr>
+
+<tr>
+<td>301</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetectorFactory category">io.netty.util.ResourceLeakDetectorFactory</td>
+<td>ResourceLeakDetectorFactory.java:196</td>
+<td title="Message">Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3e8c3cb</td>
+</tr>
+
+<tr>
+<td>334</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1028</td>
+<td title="Message">Platform: Windows</td>
+</tr>
+
+<tr>
+<td>337</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:417</td>
+<td title="Message">-Dio.netty.noUnsafe: false</td>
+</tr>
+
+<tr>
+<td>337</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:889</td>
+<td title="Message">Java version: 14</td>
+</tr>
+
+<tr>
+<td>338</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:130</td>
+<td title="Message">sun.misc.Unsafe.theUnsafe: available</td>
+</tr>
+
+<tr>
+<td>339</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:154</td>
+<td title="Message">sun.misc.Unsafe.copyMemory: available</td>
+</tr>
+
+<tr>
+<td>339</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:192</td>
+<td title="Message">java.nio.Buffer.address: available</td>
+</tr>
+
+<tr>
+<td>340</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:266</td>
+<td title="Message">direct buffer constructor: unavailable</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0.&lt;clinit&gt;(PlatformDependent0.java:232)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.&lt;clinit&gt;(PlatformDependent.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:73)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:67)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.resources.Base.initDriver(Base.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.maven.GujaratishaadiRegistrationTest.initBrowser(GujaratishaadiRegistrationTest.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:581)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1066)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</td></tr>
+
+<tr>
+<td>345</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:331</td>
+<td title="Message">java.nio.Bits.unaligned: available, true</td>
+</tr>
+
+<tr>
+<td>346</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:390</td>
+<td title="Message">jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6f10d5b6
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0.&lt;clinit&gt;(PlatformDependent0.java:343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.&lt;clinit&gt;(PlatformDependent.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:73)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:67)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.resources.Base.initDriver(Base.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.maven.GujaratishaadiRegistrationTest.initBrowser(GujaratishaadiRegistrationTest.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:581)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1066)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</td></tr>
+
+<tr>
+<td>347</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:403</td>
+<td title="Message">java.nio.DirectByteBuffer.&lt;init&gt;(long, int): unavailable</td>
+</tr>
+
+<tr>
+<td>347</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1071</td>
+<td title="Message">sun.misc.Unsafe: available</td>
+</tr>
+
+<tr>
+<td>359</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1173</td>
+<td title="Message">maxDirectMemory: 2097152000 bytes (maybe)</td>
+</tr>
+
+<tr>
+<td>361</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1192</td>
+<td title="Message">-Dio.netty.tmpdir: C:\Users\Akshay\AppData\Local\Temp (java.io.tmpdir)</td>
+</tr>
+
+<tr>
+<td>361</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1271</td>
+<td title="Message">-Dio.netty.bitMode: 64 (sun.arch.data.model)</td>
+</tr>
+
+<tr>
+<td>362</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:177</td>
+<td title="Message">-Dio.netty.maxDirectMemory: -1 bytes</td>
+</tr>
+
+<tr>
+<td>362</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:184</td>
+<td title="Message">-Dio.netty.uninitializedArrayAllocationThreshold: -1</td>
+</tr>
+
+<tr>
+<td>363</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.CleanerJava9 category">io.netty.util.internal.CleanerJava9</td>
+<td>CleanerJava9.java:71</td>
+<td title="Message">java.nio.ByteBuffer.cleaner(): available</td>
+</tr>
+
+<tr>
+<td>363</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:204</td>
+<td title="Message">-Dio.netty.noPreferDirect: false</td>
+</tr>
+
+<tr>
+<td>370</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:932</td>
+<td title="Message">org.jctools-core.MpscChunkedArrayQueue: available</td>
+</tr>
+
+<tr>
+<td>386</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.InternalThreadLocalMap category">io.netty.util.internal.InternalThreadLocalMap</td>
+<td>InternalThreadLocalMap.java:56</td>
+<td title="Message">-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024</td>
+</tr>
+
+<tr>
+<td>387</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.InternalThreadLocalMap category">io.netty.util.internal.InternalThreadLocalMap</td>
+<td>InternalThreadLocalMap.java:59</td>
+<td title="Message">-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096</td>
+</tr>
+
+<tr>
+<td>536</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.handler.ssl.JdkSslContext category">io.netty.handler.ssl.JdkSslContext</td>
+<td>JdkSslContext.java:96</td>
+<td title="Message">Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] </td>
+</tr>
+
+<tr>
+<td>536</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.handler.ssl.JdkSslContext category">io.netty.handler.ssl.JdkSslContext</td>
+<td>JdkSslContext.java:97</td>
+<td title="Message">Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]</td>
+</tr>
+
+<tr>
+<td>557</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.MultithreadEventLoopGroup category">io.netty.channel.MultithreadEventLoopGroup</td>
+<td>MultithreadEventLoopGroup.java:44</td>
+<td title="Message">-Dio.netty.eventLoopThreads: 16</td>
+</tr>
+
+<tr>
+<td>564</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:106</td>
+<td title="Message">-Dio.netty.noKeySetOptimization: false</td>
+</tr>
+
+<tr>
+<td>564</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:107</td>
+<td title="Message">-Dio.netty.selectorAutoRebuildThreshold: 512</td>
+</tr>
+
+<tr>
+<td>574</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1941a8ff</td>
+</tr>
+
+<tr>
+<td>575</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@33fe57a9</td>
+</tr>
+
+<tr>
+<td>576</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4982cc36</td>
+</tr>
+
+<tr>
+<td>577</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@691939c9</td>
+</tr>
+
+<tr>
+<td>578</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f1bfe23</td>
+</tr>
+
+<tr>
+<td>579</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e19bb76</td>
+</tr>
+
+<tr>
+<td>580</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@512535ff</td>
+</tr>
+
+<tr>
+<td>580</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@71529963</td>
+</tr>
+
+<tr>
+<td>582</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61a88b8c</td>
+</tr>
+
+<tr>
+<td>583</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@22295ec4</td>
+</tr>
+
+<tr>
+<td>584</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5adb0db3</td>
+</tr>
+
+<tr>
+<td>585</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3f270e0a</td>
+</tr>
+
+<tr>
+<td>585</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a760689</td>
+</tr>
+
+<tr>
+<td>586</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7241a47d</td>
+</tr>
+
+<tr>
+<td>587</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@70f59913</td>
+</tr>
+
+<tr>
+<td>588</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77258e59</td>
+</tr>
+
+<tr>
+<td>607</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:154</td>
+<td title="Message">-Dio.netty.allocator.numHeapArenas: 16</td>
+</tr>
+
+<tr>
+<td>608</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:155</td>
+<td title="Message">-Dio.netty.allocator.numDirectArenas: 16</td>
+</tr>
+
+<tr>
+<td>608</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:157</td>
+<td title="Message">-Dio.netty.allocator.pageSize: 8192</td>
+</tr>
+
+<tr>
+<td>608</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:162</td>
+<td title="Message">-Dio.netty.allocator.maxOrder: 11</td>
+</tr>
+
+<tr>
+<td>608</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:166</td>
+<td title="Message">-Dio.netty.allocator.chunkSize: 16777216</td>
+</tr>
+
+<tr>
+<td>609</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:167</td>
+<td title="Message">-Dio.netty.allocator.smallCacheSize: 256</td>
+</tr>
+
+<tr>
+<td>609</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:168</td>
+<td title="Message">-Dio.netty.allocator.normalCacheSize: 64</td>
+</tr>
+
+<tr>
+<td>609</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:169</td>
+<td title="Message">-Dio.netty.allocator.maxCachedBufferCapacity: 32768</td>
+</tr>
+
+<tr>
+<td>609</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:170</td>
+<td title="Message">-Dio.netty.allocator.cacheTrimInterval: 8192</td>
+</tr>
+
+<tr>
+<td>610</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:171</td>
+<td title="Message">-Dio.netty.allocator.cacheTrimIntervalMillis: 0</td>
+</tr>
+
+<tr>
+<td>610</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:172</td>
+<td title="Message">-Dio.netty.allocator.useCacheForAllThreads: true</td>
+</tr>
+
+<tr>
+<td>610</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:173</td>
+<td title="Message">-Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023</td>
+</tr>
+
+<tr>
+<td>620</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:87</td>
+<td title="Message">-Dio.netty.allocator.type: pooled</td>
+</tr>
+
+<tr>
+<td>620</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:96</td>
+<td title="Message">-Dio.netty.threadLocalDirectBufferSize: 0</td>
+</tr>
+
+<tr>
+<td>621</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:99</td>
+<td title="Message">-Dio.netty.maxThreadLocalCharBufferSize: 16384</td>
+</tr>
+
+<tr>
+<td>1437</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.DefaultChannelId category">io.netty.channel.DefaultChannelId</td>
+<td>DefaultChannelId.java:79</td>
+<td title="Message">-Dio.netty.processId: 9060 (auto-detected)</td>
+</tr>
+
+<tr>
+<td>1440</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:139</td>
+<td title="Message">-Djava.net.preferIPv4Stack: false</td>
+</tr>
+
+<tr>
+<td>1440</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:140</td>
+<td title="Message">-Djava.net.preferIPv6Addresses: false</td>
+</tr>
+
+<tr>
+<td>1453</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:224</td>
+<td title="Message">Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)</td>
+</tr>
+
+<tr>
+<td>1454</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:289</td>
+<td title="Message">Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200</td>
+</tr>
+
+<tr>
+<td>1475</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.DefaultChannelId category">io.netty.channel.DefaultChannelId</td>
+<td>DefaultChannelId.java:101</td>
+<td title="Message">-Dio.netty.machineId: 70:66:55:ff:fe:0e:77:25 (auto-detected)</td>
+</tr>
+
+<tr>
+<td>1533</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.AbstractByteBuf category">io.netty.buffer.AbstractByteBuf</td>
+<td>AbstractByteBuf.java:63</td>
+<td title="Message">-Dio.netty.buffer.checkAccessible: true</td>
+</tr>
+
+<tr>
+<td>1535</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.AbstractByteBuf category">io.netty.buffer.AbstractByteBuf</td>
+<td>AbstractByteBuf.java:64</td>
+<td title="Message">-Dio.netty.buffer.checkBounds: true</td>
+</tr>
+
+<tr>
+<td>1535</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetectorFactory category">io.netty.util.ResourceLeakDetectorFactory</td>
+<td>ResourceLeakDetectorFactory.java:196</td>
+<td title="Message">Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@17e82839</td>
+</tr>
+
+<tr>
+<td>1561</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:100</td>
+<td title="Message">-Dio.netty.recycler.maxCapacityPerThread: 4096</td>
+</tr>
+
+<tr>
+<td>1561</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:101</td>
+<td title="Message">-Dio.netty.recycler.maxSharedCapacityFactor: 2</td>
+</tr>
+
+<tr>
+<td>1561</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:102</td>
+<td title="Message">-Dio.netty.recycler.linkCapacity: 16</td>
+</tr>
+
+<tr>
+<td>1562</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:103</td>
+<td title="Message">-Dio.netty.recycler.ratio: 8</td>
+</tr>
+
+<tr>
+<td>1562</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:104</td>
+<td title="Message">-Dio.netty.recycler.delayedQueue.ratio: 8</td>
+</tr>
+
+<tr>
+<td>2400</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.ThreadLocalRandom category">io.netty.util.internal.ThreadLocalRandom</td>
+<td>ThreadLocalRandom.java:212</td>
+<td title="Message">-Dio.netty.initialSeedUniquifier: 0xfd98e8107831abd3</td>
+</tr>
+
+<tr>
+<td>2480</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:31</td>
+<td title="Message">Driver Initialized:chrome</td>
+</tr>
+
+<tr>
+<td>2660</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:36</td>
+<td title="Message">Reading Base URL from Cell Value:https://www.gujaratishaadi.com</td>
+</tr>
+
+<tr>
+<td>22015</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:44</td>
+<td title="Message">URL Opened by driver:https://www.gujaratishaadi.com/</td>
+</tr>
+
+<tr>
+<td>22035</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:46</td>
+<td title="Message">Test Class Object instantiated.</td>
+</tr>
+
+<tr>
+<td>22114</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:48</td>
+<td title="Message">Clicked on Let's Begin Button.</td>
+</tr>
+
+<tr>
+<td>25307</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:52</td>
+<td title="Message">Enetered Email ID</td>
+</tr>
+
+<tr>
+<td>25385</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:54</td>
+<td title="Message">Enetered Password</td>
+</tr>
+
+<tr>
+<td>25431</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:56</td>
+<td title="Message">Clicked on Profile Type Drop Down</td>
+</tr>
+
+<tr>
+<td>25431</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:58</td>
+<td title="Message">Clicked on Profile Type Drop Down</td>
+</tr>
+
+<tr>
+<td>25509</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:66</td>
+<td title="Message">Profiletype Selected</td>
+</tr>
+
+<tr>
+<td>25569</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:69</td>
+<td title="Message">Selected Gender: Male</td>
+</tr>
+
+<tr>
+<td>25624</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:71</td>
+<td title="Message">Clicked on Next Button</td>
+</tr>
+
+<tr>
+<td>39856</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:88</td>
+<td title="Message">Web Page Closed</td>
+</tr>
+
+<tr>
+<td>39977</td>
+<td title="AsyncHttpClient-1-4 thread">AsyncHttpClient-1-4</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PoolThreadCache category">io.netty.buffer.PoolThreadCache</td>
+<td>PoolThreadCache.java:229</td>
+<td title="Message">Freed 3 thread-local buffer(s) from thread: AsyncHttpClient-1-4</td>
+</tr>
+
+<tr>
+<td>39977</td>
+<td title="AsyncHttpClient-1-3 thread">AsyncHttpClient-1-3</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PoolThreadCache category">io.netty.buffer.PoolThreadCache</td>
+<td>PoolThreadCache.java:229</td>
+<td title="Message">Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-3</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri May 14 20:52:10 IST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.logging.InternalLoggerFactory category">io.netty.util.internal.logging.InternalLoggerFactory</td>
+<td>InternalLoggerFactory.java:53</td>
+<td title="Message">Using Log4J as the default logging framework</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetector category">io.netty.util.ResourceLeakDetector</td>
+<td>ResourceLeakDetector.java:130</td>
+<td title="Message">-Dio.netty.leakDetection.level: simple</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetector category">io.netty.util.ResourceLeakDetector</td>
+<td>ResourceLeakDetector.java:131</td>
+<td title="Message">-Dio.netty.leakDetection.targetRecords: 4</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetectorFactory category">io.netty.util.ResourceLeakDetectorFactory</td>
+<td>ResourceLeakDetectorFactory.java:196</td>
+<td title="Message">Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3e8c3cb</td>
+</tr>
+
+<tr>
+<td>38</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1028</td>
+<td title="Message">Platform: Windows</td>
+</tr>
+
+<tr>
+<td>41</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:417</td>
+<td title="Message">-Dio.netty.noUnsafe: false</td>
+</tr>
+
+<tr>
+<td>42</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:889</td>
+<td title="Message">Java version: 14</td>
+</tr>
+
+<tr>
+<td>43</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:130</td>
+<td title="Message">sun.misc.Unsafe.theUnsafe: available</td>
+</tr>
+
+<tr>
+<td>44</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:154</td>
+<td title="Message">sun.misc.Unsafe.copyMemory: available</td>
+</tr>
+
+<tr>
+<td>44</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:192</td>
+<td title="Message">java.nio.Buffer.address: available</td>
+</tr>
+
+<tr>
+<td>45</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:266</td>
+<td title="Message">direct buffer constructor: unavailable</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0.&lt;clinit&gt;(PlatformDependent0.java:232)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.&lt;clinit&gt;(PlatformDependent.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:73)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:67)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.resources.Base.initDriver(Base.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.maven.GujaratishaadiRegistrationTest.initBrowser(GujaratishaadiRegistrationTest.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:581)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1066)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</td></tr>
+
+<tr>
+<td>50</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:331</td>
+<td title="Message">java.nio.Bits.unaligned: available, true</td>
+</tr>
+
+<tr>
+<td>51</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:390</td>
+<td title="Message">jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6f10d5b6
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0.&lt;clinit&gt;(PlatformDependent0.java:343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.&lt;clinit&gt;(PlatformDependent.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:73)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:67)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.resources.Base.initDriver(Base.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.maven.GujaratishaadiRegistrationTest.initBrowser(GujaratishaadiRegistrationTest.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:581)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1066)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</td></tr>
+
+<tr>
+<td>54</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:403</td>
+<td title="Message">java.nio.DirectByteBuffer.&lt;init&gt;(long, int): unavailable</td>
+</tr>
+
+<tr>
+<td>55</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1071</td>
+<td title="Message">sun.misc.Unsafe: available</td>
+</tr>
+
+<tr>
+<td>69</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1173</td>
+<td title="Message">maxDirectMemory: 2097152000 bytes (maybe)</td>
+</tr>
+
+<tr>
+<td>72</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1192</td>
+<td title="Message">-Dio.netty.tmpdir: C:\Users\Akshay\AppData\Local\Temp (java.io.tmpdir)</td>
+</tr>
+
+<tr>
+<td>72</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1271</td>
+<td title="Message">-Dio.netty.bitMode: 64 (sun.arch.data.model)</td>
+</tr>
+
+<tr>
+<td>73</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:177</td>
+<td title="Message">-Dio.netty.maxDirectMemory: -1 bytes</td>
+</tr>
+
+<tr>
+<td>73</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:184</td>
+<td title="Message">-Dio.netty.uninitializedArrayAllocationThreshold: -1</td>
+</tr>
+
+<tr>
+<td>73</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.CleanerJava9 category">io.netty.util.internal.CleanerJava9</td>
+<td>CleanerJava9.java:71</td>
+<td title="Message">java.nio.ByteBuffer.cleaner(): available</td>
+</tr>
+
+<tr>
+<td>73</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:204</td>
+<td title="Message">-Dio.netty.noPreferDirect: false</td>
+</tr>
+
+<tr>
+<td>82</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:932</td>
+<td title="Message">org.jctools-core.MpscChunkedArrayQueue: available</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.InternalThreadLocalMap category">io.netty.util.internal.InternalThreadLocalMap</td>
+<td>InternalThreadLocalMap.java:56</td>
+<td title="Message">-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.InternalThreadLocalMap category">io.netty.util.internal.InternalThreadLocalMap</td>
+<td>InternalThreadLocalMap.java:59</td>
+<td title="Message">-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096</td>
+</tr>
+
+<tr>
+<td>264</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.handler.ssl.JdkSslContext category">io.netty.handler.ssl.JdkSslContext</td>
+<td>JdkSslContext.java:96</td>
+<td title="Message">Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] </td>
+</tr>
+
+<tr>
+<td>264</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.handler.ssl.JdkSslContext category">io.netty.handler.ssl.JdkSslContext</td>
+<td>JdkSslContext.java:97</td>
+<td title="Message">Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]</td>
+</tr>
+
+<tr>
+<td>288</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.MultithreadEventLoopGroup category">io.netty.channel.MultithreadEventLoopGroup</td>
+<td>MultithreadEventLoopGroup.java:44</td>
+<td title="Message">-Dio.netty.eventLoopThreads: 16</td>
+</tr>
+
+<tr>
+<td>296</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:106</td>
+<td title="Message">-Dio.netty.noKeySetOptimization: false</td>
+</tr>
+
+<tr>
+<td>296</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:107</td>
+<td title="Message">-Dio.netty.selectorAutoRebuildThreshold: 512</td>
+</tr>
+
+<tr>
+<td>307</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1941a8ff</td>
+</tr>
+
+<tr>
+<td>309</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@33fe57a9</td>
+</tr>
+
+<tr>
+<td>310</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4982cc36</td>
+</tr>
+
+<tr>
+<td>311</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@691939c9</td>
+</tr>
+
+<tr>
+<td>312</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4f1bfe23</td>
+</tr>
+
+<tr>
+<td>312</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e19bb76</td>
+</tr>
+
+<tr>
+<td>313</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@512535ff</td>
+</tr>
+
+<tr>
+<td>314</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@71529963</td>
+</tr>
+
+<tr>
+<td>315</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61a88b8c</td>
+</tr>
+
+<tr>
+<td>317</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@22295ec4</td>
+</tr>
+
+<tr>
+<td>318</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5adb0db3</td>
+</tr>
+
+<tr>
+<td>319</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3f270e0a</td>
+</tr>
+
+<tr>
+<td>320</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1a760689</td>
+</tr>
+
+<tr>
+<td>321</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7241a47d</td>
+</tr>
+
+<tr>
+<td>322</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@70f59913</td>
+</tr>
+
+<tr>
+<td>323</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77258e59</td>
+</tr>
+
+<tr>
+<td>342</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:154</td>
+<td title="Message">-Dio.netty.allocator.numHeapArenas: 16</td>
+</tr>
+
+<tr>
+<td>342</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:155</td>
+<td title="Message">-Dio.netty.allocator.numDirectArenas: 16</td>
+</tr>
+
+<tr>
+<td>342</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:157</td>
+<td title="Message">-Dio.netty.allocator.pageSize: 8192</td>
+</tr>
+
+<tr>
+<td>343</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:162</td>
+<td title="Message">-Dio.netty.allocator.maxOrder: 11</td>
+</tr>
+
+<tr>
+<td>343</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:166</td>
+<td title="Message">-Dio.netty.allocator.chunkSize: 16777216</td>
+</tr>
+
+<tr>
+<td>343</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:167</td>
+<td title="Message">-Dio.netty.allocator.smallCacheSize: 256</td>
+</tr>
+
+<tr>
+<td>343</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:168</td>
+<td title="Message">-Dio.netty.allocator.normalCacheSize: 64</td>
+</tr>
+
+<tr>
+<td>343</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:169</td>
+<td title="Message">-Dio.netty.allocator.maxCachedBufferCapacity: 32768</td>
+</tr>
+
+<tr>
+<td>343</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:170</td>
+<td title="Message">-Dio.netty.allocator.cacheTrimInterval: 8192</td>
+</tr>
+
+<tr>
+<td>343</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:171</td>
+<td title="Message">-Dio.netty.allocator.cacheTrimIntervalMillis: 0</td>
+</tr>
+
+<tr>
+<td>344</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:172</td>
+<td title="Message">-Dio.netty.allocator.useCacheForAllThreads: true</td>
+</tr>
+
+<tr>
+<td>344</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:173</td>
+<td title="Message">-Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023</td>
+</tr>
+
+<tr>
+<td>354</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:87</td>
+<td title="Message">-Dio.netty.allocator.type: pooled</td>
+</tr>
+
+<tr>
+<td>355</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:96</td>
+<td title="Message">-Dio.netty.threadLocalDirectBufferSize: 0</td>
+</tr>
+
+<tr>
+<td>355</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:99</td>
+<td title="Message">-Dio.netty.maxThreadLocalCharBufferSize: 16384</td>
+</tr>
+
+<tr>
+<td>1192</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.DefaultChannelId category">io.netty.channel.DefaultChannelId</td>
+<td>DefaultChannelId.java:79</td>
+<td title="Message">-Dio.netty.processId: 11336 (auto-detected)</td>
+</tr>
+
+<tr>
+<td>1194</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:139</td>
+<td title="Message">-Djava.net.preferIPv4Stack: false</td>
+</tr>
+
+<tr>
+<td>1195</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:140</td>
+<td title="Message">-Djava.net.preferIPv6Addresses: false</td>
+</tr>
+
+<tr>
+<td>1210</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:224</td>
+<td title="Message">Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)</td>
+</tr>
+
+<tr>
+<td>1211</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:289</td>
+<td title="Message">Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200</td>
+</tr>
+
+<tr>
+<td>1234</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.DefaultChannelId category">io.netty.channel.DefaultChannelId</td>
+<td>DefaultChannelId.java:101</td>
+<td title="Message">-Dio.netty.machineId: 70:66:55:ff:fe:0e:77:25 (auto-detected)</td>
+</tr>
+
+<tr>
+<td>1288</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.AbstractByteBuf category">io.netty.buffer.AbstractByteBuf</td>
+<td>AbstractByteBuf.java:63</td>
+<td title="Message">-Dio.netty.buffer.checkAccessible: true</td>
+</tr>
+
+<tr>
+<td>1289</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.AbstractByteBuf category">io.netty.buffer.AbstractByteBuf</td>
+<td>AbstractByteBuf.java:64</td>
+<td title="Message">-Dio.netty.buffer.checkBounds: true</td>
+</tr>
+
+<tr>
+<td>1290</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetectorFactory category">io.netty.util.ResourceLeakDetectorFactory</td>
+<td>ResourceLeakDetectorFactory.java:196</td>
+<td title="Message">Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@41be3fc2</td>
+</tr>
+
+<tr>
+<td>1318</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:100</td>
+<td title="Message">-Dio.netty.recycler.maxCapacityPerThread: 4096</td>
+</tr>
+
+<tr>
+<td>1318</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:101</td>
+<td title="Message">-Dio.netty.recycler.maxSharedCapacityFactor: 2</td>
+</tr>
+
+<tr>
+<td>1318</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:102</td>
+<td title="Message">-Dio.netty.recycler.linkCapacity: 16</td>
+</tr>
+
+<tr>
+<td>1318</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:103</td>
+<td title="Message">-Dio.netty.recycler.ratio: 8</td>
+</tr>
+
+<tr>
+<td>1318</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:104</td>
+<td title="Message">-Dio.netty.recycler.delayedQueue.ratio: 8</td>
+</tr>
+
+<tr>
+<td>2117</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.ThreadLocalRandom category">io.netty.util.internal.ThreadLocalRandom</td>
+<td>ThreadLocalRandom.java:212</td>
+<td title="Message">-Dio.netty.initialSeedUniquifier: 0xf6c6134c1c466f54</td>
+</tr>
+
+<tr>
+<td>2171</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:31</td>
+<td title="Message">Driver Initialized:chrome</td>
+</tr>
+
+<tr>
+<td>2317</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:36</td>
+<td title="Message">Reading Base URL from Cell Value:https://www.gujaratishaadi.com</td>
+</tr>
+
+<tr>
+<td>13325</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:44</td>
+<td title="Message">URL Opened by driver:https://www.gujaratishaadi.com/</td>
+</tr>
+
+<tr>
+<td>13346</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:46</td>
+<td title="Message">Test Class Object instantiated.</td>
+</tr>
+
+<tr>
+<td>13429</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:48</td>
+<td title="Message">Clicked on Let's Begin Button.</td>
+</tr>
+
+<tr>
+<td>16642</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:52</td>
+<td title="Message">Enetered Email ID</td>
+</tr>
+
+<tr>
+<td>16778</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:54</td>
+<td title="Message">Enetered Password</td>
+</tr>
+
+<tr>
+<td>16866</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:56</td>
+<td title="Message">Clicked on Profile Type Drop Down</td>
+</tr>
+
+<tr>
+<td>17005</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:65</td>
+<td title="Message">Profiletype Selected</td>
+</tr>
+
+<tr>
+<td>17071</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:68</td>
+<td title="Message">Selected Gender: Male</td>
+</tr>
+
+<tr>
+<td>17156</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:70</td>
+<td title="Message">Clicked on Next Button</td>
+</tr>
+
+<tr>
+<td>17846</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:81</td>
+<td title="Message">Community on Web Page.Gujarati</td>
+</tr>
+
+<tr>
+<td>22029</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:87</td>
+<td title="Message">Web Page Closed</td>
+</tr>
+
+<tr>
+<td>22108</td>
+<td title="AsyncHttpClient-1-4 thread">AsyncHttpClient-1-4</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PoolThreadCache category">io.netty.buffer.PoolThreadCache</td>
+<td>PoolThreadCache.java:229</td>
+<td title="Message">Freed 3 thread-local buffer(s) from thread: AsyncHttpClient-1-4</td>
+</tr>
+
+<tr>
+<td>22108</td>
+<td title="AsyncHttpClient-1-3 thread">AsyncHttpClient-1-3</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PoolThreadCache category">io.netty.buffer.PoolThreadCache</td>
+<td>PoolThreadCache.java:229</td>
+<td title="Message">Freed 2 thread-local buffer(s) from thread: AsyncHttpClient-1-3</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat May 15 12:50:43 IST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.logging.InternalLoggerFactory category">io.netty.util.internal.logging.InternalLoggerFactory</td>
+<td>InternalLoggerFactory.java:53</td>
+<td title="Message">Using Log4J as the default logging framework</td>
+</tr>
+
+<tr>
+<td>60</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetector category">io.netty.util.ResourceLeakDetector</td>
+<td>ResourceLeakDetector.java:130</td>
+<td title="Message">-Dio.netty.leakDetection.level: simple</td>
+</tr>
+
+<tr>
+<td>63</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetector category">io.netty.util.ResourceLeakDetector</td>
+<td>ResourceLeakDetector.java:131</td>
+<td title="Message">-Dio.netty.leakDetection.targetRecords: 4</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetectorFactory category">io.netty.util.ResourceLeakDetectorFactory</td>
+<td>ResourceLeakDetectorFactory.java:196</td>
+<td title="Message">Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6b8ca3c8</td>
+</tr>
+
+<tr>
+<td>140</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1028</td>
+<td title="Message">Platform: Windows</td>
+</tr>
+
+<tr>
+<td>142</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:417</td>
+<td title="Message">-Dio.netty.noUnsafe: false</td>
+</tr>
+
+<tr>
+<td>143</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:889</td>
+<td title="Message">Java version: 14</td>
+</tr>
+
+<tr>
+<td>145</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:130</td>
+<td title="Message">sun.misc.Unsafe.theUnsafe: available</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:154</td>
+<td title="Message">sun.misc.Unsafe.copyMemory: available</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:192</td>
+<td title="Message">java.nio.Buffer.address: available</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:266</td>
+<td title="Message">direct buffer constructor: unavailable</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:238)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0.&lt;clinit&gt;(PlatformDependent0.java:232)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.&lt;clinit&gt;(PlatformDependent.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:73)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:67)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.resources.Base.initDriver(Base.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.maven.GujaratishaadiRegistrationTest.initBrowser(GujaratishaadiRegistrationTest.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:578)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1069)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1037)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</td></tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:331</td>
+<td title="Message">java.nio.Bits.unaligned: available, true</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:390</td>
+<td title="Message">jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @505fc5a4
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:352)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent0.&lt;clinit&gt;(PlatformDependent0.java:343)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.internal.PlatformDependent.&lt;clinit&gt;(PlatformDependent.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at io.netty.util.HashedWheelTimer.&lt;init&gt;(HashedWheelTimer.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.DefaultAsyncHttpClient.&lt;init&gt;(DefaultAsyncHttpClient.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient.&lt;clinit&gt;(NettyClient.java:42)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:107)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:80)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:90)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.&lt;init&gt;(HttpCommandExecutor.java:73)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.&lt;init&gt;(DriverCommandExecutor.java:67)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.&lt;init&gt;(ChromiumDriverCommandExecutor.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:163)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.resources.Base.initDriver(Base.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.shaaditest.maven.GujaratishaadiRegistrationTest.initBrowser(GujaratishaadiRegistrationTest.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:578)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1069)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1037)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</td></tr>
+
+<tr>
+<td>158</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent0 category">io.netty.util.internal.PlatformDependent0</td>
+<td>PlatformDependent0.java:403</td>
+<td title="Message">java.nio.DirectByteBuffer.&lt;init&gt;(long, int): unavailable</td>
+</tr>
+
+<tr>
+<td>158</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1071</td>
+<td title="Message">sun.misc.Unsafe: available</td>
+</tr>
+
+<tr>
+<td>169</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1173</td>
+<td title="Message">maxDirectMemory: 2097152000 bytes (maybe)</td>
+</tr>
+
+<tr>
+<td>171</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1192</td>
+<td title="Message">-Dio.netty.tmpdir: C:\Users\Akshay\AppData\Local\Temp (java.io.tmpdir)</td>
+</tr>
+
+<tr>
+<td>171</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:1271</td>
+<td title="Message">-Dio.netty.bitMode: 64 (sun.arch.data.model)</td>
+</tr>
+
+<tr>
+<td>173</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:177</td>
+<td title="Message">-Dio.netty.maxDirectMemory: -1 bytes</td>
+</tr>
+
+<tr>
+<td>173</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:184</td>
+<td title="Message">-Dio.netty.uninitializedArrayAllocationThreshold: -1</td>
+</tr>
+
+<tr>
+<td>174</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.CleanerJava9 category">io.netty.util.internal.CleanerJava9</td>
+<td>CleanerJava9.java:71</td>
+<td title="Message">java.nio.ByteBuffer.cleaner(): available</td>
+</tr>
+
+<tr>
+<td>174</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:204</td>
+<td title="Message">-Dio.netty.noPreferDirect: false</td>
+</tr>
+
+<tr>
+<td>181</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.PlatformDependent category">io.netty.util.internal.PlatformDependent</td>
+<td>PlatformDependent.java:932</td>
+<td title="Message">org.jctools-core.MpscChunkedArrayQueue: available</td>
+</tr>
+
+<tr>
+<td>199</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.InternalThreadLocalMap category">io.netty.util.internal.InternalThreadLocalMap</td>
+<td>InternalThreadLocalMap.java:56</td>
+<td title="Message">-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024</td>
+</tr>
+
+<tr>
+<td>200</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.InternalThreadLocalMap category">io.netty.util.internal.InternalThreadLocalMap</td>
+<td>InternalThreadLocalMap.java:59</td>
+<td title="Message">-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096</td>
+</tr>
+
+<tr>
+<td>427</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.handler.ssl.JdkSslContext category">io.netty.handler.ssl.JdkSslContext</td>
+<td>JdkSslContext.java:96</td>
+<td title="Message">Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] </td>
+</tr>
+
+<tr>
+<td>427</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.handler.ssl.JdkSslContext category">io.netty.handler.ssl.JdkSslContext</td>
+<td>JdkSslContext.java:97</td>
+<td title="Message">Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]</td>
+</tr>
+
+<tr>
+<td>467</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.MultithreadEventLoopGroup category">io.netty.channel.MultithreadEventLoopGroup</td>
+<td>MultithreadEventLoopGroup.java:44</td>
+<td title="Message">-Dio.netty.eventLoopThreads: 16</td>
+</tr>
+
+<tr>
+<td>506</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:106</td>
+<td title="Message">-Dio.netty.noKeySetOptimization: false</td>
+</tr>
+
+<tr>
+<td>506</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:107</td>
+<td title="Message">-Dio.netty.selectorAutoRebuildThreshold: 512</td>
+</tr>
+
+<tr>
+<td>599</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@341814d3</td>
+</tr>
+
+<tr>
+<td>603</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@119cbf96</td>
+</tr>
+
+<tr>
+<td>605</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@71329995</td>
+</tr>
+
+<tr>
+<td>607</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@768fc0f2</td>
+</tr>
+
+<tr>
+<td>608</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5454d35e</td>
+</tr>
+
+<tr>
+<td>610</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@20c0a64d</td>
+</tr>
+
+<tr>
+<td>611</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@455b6df1</td>
+</tr>
+
+<tr>
+<td>612</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4ddbbdf8</td>
+</tr>
+
+<tr>
+<td>614</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3f67593e</td>
+</tr>
+
+<tr>
+<td>616</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1ab06251</td>
+</tr>
+
+<tr>
+<td>617</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@41ab013</td>
+</tr>
+
+<tr>
+<td>618</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@14bee915</td>
+</tr>
+
+<tr>
+<td>619</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1115ec15</td>
+</tr>
+
+<tr>
+<td>620</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@82ea68c</td>
+</tr>
+
+<tr>
+<td>621</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@59e505b2</td>
+</tr>
+
+<tr>
+<td>622</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="io.netty.channel.nio.NioEventLoop category">io.netty.channel.nio.NioEventLoop</td>
+<td>NioEventLoop.java:260</td>
+<td title="Message">instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3af0a9da</td>
+</tr>
+
+<tr>
+<td>646</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:154</td>
+<td title="Message">-Dio.netty.allocator.numHeapArenas: 16</td>
+</tr>
+
+<tr>
+<td>646</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:155</td>
+<td title="Message">-Dio.netty.allocator.numDirectArenas: 16</td>
+</tr>
+
+<tr>
+<td>647</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:157</td>
+<td title="Message">-Dio.netty.allocator.pageSize: 8192</td>
+</tr>
+
+<tr>
+<td>648</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:162</td>
+<td title="Message">-Dio.netty.allocator.maxOrder: 11</td>
+</tr>
+
+<tr>
+<td>648</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:166</td>
+<td title="Message">-Dio.netty.allocator.chunkSize: 16777216</td>
+</tr>
+
+<tr>
+<td>648</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:167</td>
+<td title="Message">-Dio.netty.allocator.smallCacheSize: 256</td>
+</tr>
+
+<tr>
+<td>649</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:168</td>
+<td title="Message">-Dio.netty.allocator.normalCacheSize: 64</td>
+</tr>
+
+<tr>
+<td>649</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:169</td>
+<td title="Message">-Dio.netty.allocator.maxCachedBufferCapacity: 32768</td>
+</tr>
+
+<tr>
+<td>649</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:170</td>
+<td title="Message">-Dio.netty.allocator.cacheTrimInterval: 8192</td>
+</tr>
+
+<tr>
+<td>649</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:171</td>
+<td title="Message">-Dio.netty.allocator.cacheTrimIntervalMillis: 0</td>
+</tr>
+
+<tr>
+<td>650</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:172</td>
+<td title="Message">-Dio.netty.allocator.useCacheForAllThreads: true</td>
+</tr>
+
+<tr>
+<td>650</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PooledByteBufAllocator category">io.netty.buffer.PooledByteBufAllocator</td>
+<td>PooledByteBufAllocator.java:173</td>
+<td title="Message">-Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023</td>
+</tr>
+
+<tr>
+<td>664</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:87</td>
+<td title="Message">-Dio.netty.allocator.type: pooled</td>
+</tr>
+
+<tr>
+<td>665</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:96</td>
+<td title="Message">-Dio.netty.threadLocalDirectBufferSize: 0</td>
+</tr>
+
+<tr>
+<td>665</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.ByteBufUtil category">io.netty.buffer.ByteBufUtil</td>
+<td>ByteBufUtil.java:99</td>
+<td title="Message">-Dio.netty.maxThreadLocalCharBufferSize: 16384</td>
+</tr>
+
+<tr>
+<td>7158</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.DefaultChannelId category">io.netty.channel.DefaultChannelId</td>
+<td>DefaultChannelId.java:79</td>
+<td title="Message">-Dio.netty.processId: 12872 (auto-detected)</td>
+</tr>
+
+<tr>
+<td>7160</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:139</td>
+<td title="Message">-Djava.net.preferIPv4Stack: false</td>
+</tr>
+
+<tr>
+<td>7160</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:140</td>
+<td title="Message">-Djava.net.preferIPv6Addresses: false</td>
+</tr>
+
+<tr>
+<td>7174</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:224</td>
+<td title="Message">Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)</td>
+</tr>
+
+<tr>
+<td>7175</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.NetUtil category">io.netty.util.NetUtil</td>
+<td>NetUtil.java:289</td>
+<td title="Message">Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200</td>
+</tr>
+
+<tr>
+<td>7197</td>
+<td title="Forwarding newSession on session null to remote thread">Forwarding newSession on session null to remote</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.channel.DefaultChannelId category">io.netty.channel.DefaultChannelId</td>
+<td>DefaultChannelId.java:101</td>
+<td title="Message">-Dio.netty.machineId: 70:66:55:ff:fe:0e:77:25 (auto-detected)</td>
+</tr>
+
+<tr>
+<td>7299</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.AbstractByteBuf category">io.netty.buffer.AbstractByteBuf</td>
+<td>AbstractByteBuf.java:63</td>
+<td title="Message">-Dio.netty.buffer.checkAccessible: true</td>
+</tr>
+
+<tr>
+<td>7301</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.AbstractByteBuf category">io.netty.buffer.AbstractByteBuf</td>
+<td>AbstractByteBuf.java:64</td>
+<td title="Message">-Dio.netty.buffer.checkBounds: true</td>
+</tr>
+
+<tr>
+<td>7301</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.ResourceLeakDetectorFactory category">io.netty.util.ResourceLeakDetectorFactory</td>
+<td>ResourceLeakDetectorFactory.java:196</td>
+<td title="Message">Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2230e410</td>
+</tr>
+
+<tr>
+<td>7329</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:100</td>
+<td title="Message">-Dio.netty.recycler.maxCapacityPerThread: 4096</td>
+</tr>
+
+<tr>
+<td>7329</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:101</td>
+<td title="Message">-Dio.netty.recycler.maxSharedCapacityFactor: 2</td>
+</tr>
+
+<tr>
+<td>7329</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:102</td>
+<td title="Message">-Dio.netty.recycler.linkCapacity: 16</td>
+</tr>
+
+<tr>
+<td>7329</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:103</td>
+<td title="Message">-Dio.netty.recycler.ratio: 8</td>
+</tr>
+
+<tr>
+<td>7329</td>
+<td title="AsyncHttpClient-1-2 thread">AsyncHttpClient-1-2</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.Recycler category">io.netty.util.Recycler</td>
+<td>Recycler.java:104</td>
+<td title="Message">-Dio.netty.recycler.delayedQueue.ratio: 8</td>
+</tr>
+
+<tr>
+<td>8550</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.util.internal.ThreadLocalRandom category">io.netty.util.internal.ThreadLocalRandom</td>
+<td>ThreadLocalRandom.java:212</td>
+<td title="Message">-Dio.netty.initialSeedUniquifier: 0x253d6c3f4153540c</td>
+</tr>
+
+<tr>
+<td>9334</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:31</td>
+<td title="Message">Driver Initialized:chrome</td>
+</tr>
+
+<tr>
+<td>9875</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:36</td>
+<td title="Message">Reading Base URL from Cell Value:https://www.gujaratishaadi.com</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application log</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat May 15 12:50:53 IST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>11681</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:34</td>
+<td title="Message">Driver Initialized:chrome</td>
+</tr>
+
+<tr>
+<td>11825</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:39</td>
+<td title="Message">Reading Base URL from Cell Value:https://www.marathishaadi.com</td>
+</tr>
+
+<tr>
+<td>21784</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:44</td>
+<td title="Message">URL Opened by driver:https://www.gujaratishaadi.com/</td>
+</tr>
+
+<tr>
+<td>21994</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:46</td>
+<td title="Message">Test Class Object instantiated.</td>
+</tr>
+
+<tr>
+<td>22089</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:48</td>
+<td title="Message">Clicked on Let's Begin Button.</td>
+</tr>
+
+<tr>
+<td>25260</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:52</td>
+<td title="Message">Enetered Email ID</td>
+</tr>
+
+<tr>
+<td>25363</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:54</td>
+<td title="Message">Enetered Password</td>
+</tr>
+
+<tr>
+<td>25420</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:56</td>
+<td title="Message">Clicked on Profile Type Drop Down</td>
+</tr>
+
+<tr>
+<td>25708</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:65</td>
+<td title="Message">Profiletype Selected</td>
+</tr>
+
+<tr>
+<td>25826</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:68</td>
+<td title="Message">Selected Gender: Male</td>
+</tr>
+
+<tr>
+<td>25885</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:70</td>
+<td title="Message">Clicked on Next Button</td>
+</tr>
+
+<tr>
+<td>42382</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:47</td>
+<td title="Message">URL Opened by driver:https://www.marathishaadi.com/</td>
+</tr>
+
+<tr>
+<td>42411</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:49</td>
+<td title="Message">Test Class Object instantiated.</td>
+</tr>
+
+<tr>
+<td>42500</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:51</td>
+<td title="Message">Clicked on Let's Begin Button.</td>
+</tr>
+
+<tr>
+<td>45696</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:55</td>
+<td title="Message">Enetered Email ID</td>
+</tr>
+
+<tr>
+<td>45830</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:57</td>
+<td title="Message">Enetered Password</td>
+</tr>
+
+<tr>
+<td>45917</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:59</td>
+<td title="Message">Clicked on Profile Type Drop Down</td>
+</tr>
+
+<tr>
+<td>45990</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:68</td>
+<td title="Message">Profiletype Selected</td>
+</tr>
+
+<tr>
+<td>46045</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:71</td>
+<td title="Message">Selected Gender: Male</td>
+</tr>
+
+<tr>
+<td>46098</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:73</td>
+<td title="Message">Clicked on Next Button</td>
+</tr>
+
+<tr>
+<td>60368</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>GujaratishaadiRegistrationTest.java:87</td>
+<td title="Message">Web Page Closed</td>
+</tr>
+
+<tr>
+<td>64538</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.shaaditest.resources.Base category">org.shaaditest.resources.Base</td>
+<td>MarathishaddiRegistrationTest.java:90</td>
+<td title="Message">Web Page Closed</td>
+</tr>
+
+<tr>
+<td>65400</td>
+<td title="AsyncHttpClient-1-7 thread">AsyncHttpClient-1-7</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="io.netty.buffer.PoolThreadCache category">io.netty.buffer.PoolThreadCache</td>
+<td>PoolThreadCache.java:229</td>
+<td title="Message">Freed 3 thread-local buffer(s) from thread: AsyncHttpClient-1-7</td>
+</tr>
